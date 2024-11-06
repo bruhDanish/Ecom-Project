@@ -57,6 +57,7 @@ async function init(){
 //stitch the routes
 
 require('./routes/auth.routes')(app);
+require('./routes/category.routes')(app);
 
 //start the server
 app.listen(server_config.PORT, () => {
